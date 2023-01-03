@@ -40,7 +40,7 @@ export const PostList = ({ posts }: Props) => {
                             {post.title}
                         </Heading>
                     </Link>
-                    <DateTime datetime={post.publishedAt!} />
+                    <DateTime datetime={post.publishedAt || ''} />
                     <Text mt="1" fontSize="xl" color="gray.500">{post.description}</Text>
                     <Link href={`/blog/${post.id}`}>
                         <Button colorScheme='teal' variant='outline' size="sm" mt="8">
