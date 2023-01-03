@@ -15,7 +15,7 @@ import {
     useBreakpointValue,
     useDisclosure,
     useColorMode,
-    Heading
+    Heading,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -35,6 +35,7 @@ import { FiMonitor } from 'react-icons/fi'
     const linkHoverColor = useColorModeValue('gray.800', 'white');
   
     return (
+      <>
       <Box>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
@@ -90,6 +91,7 @@ import { FiMonitor } from 'react-icons/fi'
           <MobileNav />
         </Collapse>
       </Box>
+      </>
     );
   }
   

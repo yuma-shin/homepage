@@ -14,7 +14,7 @@ import { Box,
          Button,
          Link,
          Icon,
-         HStack
+         HStack,
         } from '@chakra-ui/react'
 import { AiFillGithub,AiFillInstagram,AiOutlineTwitter,AiFillYoutube,AiFillHeart } from 'react-icons/ai'
 import { SiQiita } from 'react-icons/si'
