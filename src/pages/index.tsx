@@ -50,7 +50,7 @@ function Home(){
         </Box>
         <Box pt={10}>
           <Heading size='md' mb={1}>Skils</Heading>
-          <Tabs variant='soft-rounded' colorScheme='teal' pt={5} >
+          <Tabs size={'sm'} variant='soft-rounded' colorScheme='teal' pt={5} isFitted>
             <TabList>
               <Tab>Cisco</Tab>
               <Tab>Language</Tab>
