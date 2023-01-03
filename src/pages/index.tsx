@@ -54,7 +54,6 @@ function Home(){
             <TabList>
               <Tab>Cisco</Tab>
               <Tab>Language</Tab>
-              <Tab>Database</Tab>
               <Tab>Linux</Tab>
               <Tab>Other</Tab>
             </TabList>
@@ -84,13 +83,6 @@ function Home(){
               </TabPanel>
               <TabPanel>
                 <ul>
-                  <li>Maria DB</li>
-                  <li>PostgreSQL</li>
-                  <li>Sqlite3</li>
-                </ul>
-              </TabPanel>
-              <TabPanel>
-                <ul>
                   <li>CentOS</li>
                   <li>Red Hat Enterprise Linux</li>
                   <li>Ubuntu</li>
@@ -98,6 +90,9 @@ function Home(){
               </TabPanel>
               <TabPanel>
                 <ul>
+                  <li>Maria DB</li>
+                  <li>PostgreSQL</li>
+                  <li>Sqlite3</li>
                   <li>Enterprise Cloud 1.0</li>
                   <li>Enterprise Cloud 2.0</li>
                   <li>Smart Data Platform</li>
