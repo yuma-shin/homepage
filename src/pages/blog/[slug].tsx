@@ -24,7 +24,7 @@ export default function Article({ post }: Props) {
                     <Heading as="h1" fontSize="4xl" lineHeight={1.6}>
                         {post.title}
                     </Heading>
-                    <DateTime datetime={post.publishedAt} />
+                    <DateTime datetime={post.publishedAt!} />
                 </Stack>
                 <Divider marginY="3" />
                 {/* 記事本文 */}
