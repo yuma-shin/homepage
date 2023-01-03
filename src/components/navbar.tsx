@@ -61,14 +61,7 @@ import { FiMonitor } from 'react-icons/fi'
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              <Icon as={FiMonitor} w={5} h={5} pt={2} mr={1}/>Yuma Shintani
-            </Text>
-  
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <Flex display={{ base: 'none', md: 'flex' }}>
               <DesktopNav />
             </Flex>
           </Flex>
