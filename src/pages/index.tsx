@@ -137,13 +137,10 @@ function Home(){
               <Icon as={AiFillGithub} w={5} h={5} mr={1}/><Link href='https://github.com/yuma-shin' target='_blank'>@yuma-shin</Link>
             </Button><br/>
             <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiOutlineTwitter} w={5} h={5} mr={1}/><Link href='https://twitter.com/TSUMTSUM_YUMA' target='_blank'>@TSUMTSUM_YUMA (Private)</Link>
+              <Icon as={AiOutlineTwitter} w={5} h={5} mr={1}/><Link href='https://twitter.com/TSUMTSUM_YUMA' target='_blank'>@TSUMTSUM_YUMA</Link>
             </Button><br/>
             <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiOutlineTwitter} w={5} h={5} mr={1}/><Link href='https://twitter.com/TSUMTSUM_YUMA_P' target='_blank'>@TSUMTSUM_YUMA_P (Public)</Link>
-            </Button><br/>
-            <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiFillInstagram} w={5} h={5} mr={1}/><Link href='https://www.instagram.com/yuma.shintani/' target='_blank'>@yuma.shintani (Private)</Link>
+              <Icon as={AiFillInstagram} w={5} h={5} mr={1}/><Link href='https://www.instagram.com/yuma.shintani/' target='_blank'>@yuma.shintani</Link>
             </Button><br/>
             <Button colorScheme='teal' variant='ghost'>
               <Icon as={SiQiita} w={5} h={5} mr={1}/><Link href='https://qiita.com/y-shin' target='_blank'>@y-shin</Link>

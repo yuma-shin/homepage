@@ -77,21 +77,6 @@ import { FiMonitor } from 'react-icons/fi'
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button
-              as={'a'}
-              fontSize={'sm'}
-              fontWeight={600}
-              variant={'link'}
-              href={'https://github.com/yuma-shin'}
-              color={'white'}
-              bg={'gray.700'}
-              pr={2}
-              pl={2}
-              _hover={{
-                bg: 'gray.900',
-              }}>
-              Github <ExternalLinkIcon/>
-            </Button>
             <IconButton
             aria-label="DarkMode Switch"
             icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
