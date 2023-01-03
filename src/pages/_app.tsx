@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider>
       <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Yuma's Homepage" />
+          <meta name="description" content="Yuma - Homepage" />
           <meta name="author" content="Yuma Shintani" />
           <title>Yuma's - Homepage</title>
       </Head>
