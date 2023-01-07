@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider,Fade } from '@chakra-ui/react'
 import Navbar from 'components/navbar'
 import Head from 'next/head'
 
@@ -13,7 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <title>Yuma&apos;s - Homepage</title>
       </Head>
       <Navbar />
+      <Fade in>
       <Component {...pageProps} />
+      </Fade>
     </ChakraProvider>
   )
 }
