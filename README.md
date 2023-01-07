@@ -2,7 +2,7 @@
 
 This repository is website for Yuma Shintani.
 
-# Stack
+## Stack
 - Next.js
 - Chakra UI
 
