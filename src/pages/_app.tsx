@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app'
 import { ChakraProvider,Fade } from '@chakra-ui/react'
 import Navbar from 'components/navbar'
 import Head from 'next/head'
+import Footer from 'components/footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Fade in>
       <Component {...pageProps} />
       </Fade>
+      <Footer/>
     </ChakraProvider>
   )
 }
