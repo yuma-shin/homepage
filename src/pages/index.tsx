@@ -28,7 +28,7 @@ function Home(){
             <Image
               borderRadius='full'
               boxSize='150px'
-              src='/myphoto.jpeg'
+              src='/myphoto.webp'
               alt='Yuma Shintani'
             />
           </Center>
@@ -110,6 +110,7 @@ function Home(){
                 <Image
                   //borderRadius='full'
                   //boxSize='150px'
+                  maxW='200px'
                   src='https://img.youtube.com/vi/tGvZQ_vfosg/mqdefault.jpg'
                   alt='ErroЯ CODE | Who-ya Extended'
                   
