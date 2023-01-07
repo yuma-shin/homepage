@@ -14,6 +14,7 @@ import { Box,
          Link,
          Icon,
          HStack,
+         Stack
         } from '@chakra-ui/react'
 import { AiFillGithub,AiFillInstagram,AiOutlineTwitter,AiFillYoutube,AiFillHeart } from 'react-icons/ai'
 import { SiQiita } from 'react-icons/si'
@@ -103,24 +104,27 @@ function Home(){
         </Box>
         <Box pt={10}>
           <Heading size='md' mb={1}><Icon as={AiFillHeart} pt={1}/>Music</Heading>
-          <HStack pt={10}>
+          <HStack pt={5} display={{ sm: 'flex' }}>
             <Center w='200px' h='100%'>
-              <Image
-                borderRadius='full'
-                boxSize='150px'
-                src='https://img.youtube.com/vi/tGvZQ_vfosg/mqdefault.jpg'
-                alt='ErroЯ CODE | Who-ya Extended'
-              />
+              <Link href='https://youtu.be/tGvZQ_vfosg'>
+                <Image
+                  //borderRadius='full'
+                  //boxSize='150px'
+                  src='https://img.youtube.com/vi/tGvZQ_vfosg/mqdefault.jpg'
+                  alt='ErroЯ CODE | Who-ya Extended'
+                  
+                />
+              </Link>
             </Center>
-            <Center h='100%'>
-              <Box>
+            <Stack h='100%'>
+              <Box ml={5}>
                 <Heading fontSize={'xl'}>ErroЯ CODE</Heading>
                 <Text>Who-ya Extended</Text>
                 <Button colorScheme='teal' variant='ghost'>
                   <Icon as={AiFillYoutube} w={5} h={5} mr={1}/><Link href='https://youtu.be/tGvZQ_vfosg' target='_blank'>MUSIC VIDEO</Link>
                 </Button>
               </Box>
-            </Center>
+            </Stack>
           </HStack>
 
         </Box>
