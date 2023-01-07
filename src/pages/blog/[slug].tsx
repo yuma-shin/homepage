@@ -7,11 +7,17 @@ import {
     Divider,
     Heading,
     Stack,
-    Alert
+    Alert,
+    Flex,
+    HStack,
+    Text,
+    Wrap,
+    WrapItem
 } from "@chakra-ui/react";
 import React from "react";
 import { DateTime } from "components/datetime";
 import { MarkdownTemplate } from 'components/markdowntemplate'
+import { TagLink } from "components/taglink"
 
 type Props = {
     post: Post
@@ -33,7 +39,23 @@ export default function Article({ post,draftKey }: Props) {
                     <Heading as="h1" fontSize="4xl" lineHeight={1.6}>
                         {post.title}
                     </Heading>
-                    <DateTime datetime={post.publishedAt || ''} />
+                    <Flex mb={5}>
+                    <HStack mr={5}>
+                        <Text as='p' fontSize='md' color="gray.500">公開日 : </Text>
+                        <DateTime datetime={post.publishedAt || ''} />
+                    </HStack>
+                    <HStack>
+                        <Text as='p' fontSize='md' color="gray.500">更新日 : </Text>
+                        <DateTime datetime={post.updatedAt || ''} />
+                    </HStack>
+                    </Flex>
+                    <Wrap>
+                        {post.tag.map(tag => (
+                            <WrapItem key={tag.id}>
+                                <TagLink tag={tag} />
+                            </WrapItem>
+                        ))}
+                    </Wrap>
                 </Stack>
                 <Divider marginY="3" />
                 {/* 記事本文 */}

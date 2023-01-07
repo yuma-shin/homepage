@@ -15,7 +15,7 @@ export const DateTime: FC<Props> = ({ datetime }) => {
     const formatDate = dayjs.utc(datetime).tz('Asia/Tokyo').format('YYYY-MM-DD')
     return (
         <Box mt="4">
-            <Text as="time" dateTime={formatDate} fontSize="xl" color="gray.500">
+            <Text as="time" dateTime={formatDate} fontSize="md" color="gray.500">
                 {formatDate}
             </Text>
         </Box>

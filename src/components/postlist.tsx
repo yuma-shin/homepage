@@ -8,6 +8,9 @@ import {
     Button,
     Wrap,
     WrapItem,
+    Spacer,
+    Flex,
+    HStack
 } from "@chakra-ui/react";
 import { DateTime } from 'components/datetime';
 import { TagLink } from 'components/taglink';
@@ -40,7 +43,16 @@ export const PostList = ({ posts }: Props) => {
                             {post.title}
                         </Heading>
                     </Link>
-                    <DateTime datetime={post.publishedAt || ''} />
+                    <Flex mb={5}>
+                    <HStack mr={5}>
+                        <Text as='p' fontSize='md' color="gray.500">公開日 : </Text>
+                        <DateTime datetime={post.publishedAt || ''} />
+                    </HStack>
+                    <HStack>
+                        <Text as='p' fontSize='md' color="gray.500">更新日 : </Text>
+                        <DateTime datetime={post.updatedAt || ''} />
+                    </HStack>
+                    </Flex>
                     <Text mt="1" fontSize="xl" color="gray.500">{post.description}</Text>
                     <Link href={`/blog/${post.id}`}>
                         <Button colorScheme='teal' variant='outline' size="sm" mt="8">
