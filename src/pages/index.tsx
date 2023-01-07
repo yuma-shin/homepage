@@ -1,6 +1,5 @@
 import { Box,
          Image,
-         Flex,
          Spacer,
          Container,
          Center,
@@ -18,7 +17,6 @@ import { Box,
         } from '@chakra-ui/react'
 import { AiFillGithub,AiFillInstagram,AiOutlineTwitter,AiFillYoutube,AiFillHeart } from 'react-icons/ai'
 import { SiQiita } from 'react-icons/si'
-
 
 function Home(){
   return (
@@ -128,18 +126,18 @@ function Home(){
         </Box>
         <Box pt={10}>
           <Heading size='md' mb={1}>Links</Heading>
-            <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiFillGithub} w={5} h={5} mr={1}/><Link href='https://github.com/yuma-shin' target='_blank'>@yuma-shin</Link>
-            </Button><br/>
-            <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiOutlineTwitter} w={5} h={5} mr={1}/><Link href='https://twitter.com/TSUMTSUM_YUMA' target='_blank'>@TSUMTSUM_YUMA</Link>
-            </Button><br/>
-            <Button colorScheme='teal' variant='ghost'>
-              <Icon as={AiFillInstagram} w={5} h={5} mr={1}/><Link href='https://www.instagram.com/yuma.shintani/' target='_blank'>@yuma.shintani</Link>
-            </Button><br/>
-            <Button colorScheme='teal' variant='ghost'>
-              <Icon as={SiQiita} w={5} h={5} mr={1}/><Link href='https://qiita.com/y-shin' target='_blank'>@y-shin</Link>
-            </Button>
+          <Button colorScheme='teal' variant='ghost'>
+            <Icon as={AiFillGithub} w={5} h={5} mr={1}/><Link href='https://github.com/yuma-shin' target='_blank'>@yuma-shin</Link>
+          </Button><br/>
+          <Button colorScheme='teal' variant='ghost'>
+            <Icon as={AiOutlineTwitter} w={5} h={5} mr={1}/><Link href='https://twitter.com/TSUMTSUM_YUMA' target='_blank'>@TSUMTSUM_YUMA</Link>
+          </Button><br/>
+          <Button colorScheme='teal' variant='ghost'>
+            <Icon as={AiFillInstagram} w={5} h={5} mr={1}/><Link href='https://www.instagram.com/yuma.shintani/' target='_blank'>@yuma.shintani</Link>
+          </Button><br/>
+          <Button colorScheme='teal' variant='ghost'>
+            <Icon as={SiQiita} w={5} h={5} mr={1}/><Link href='https://qiita.com/y-shin' target='_blank'>@y-shin</Link>
+          </Button>
         </Box>
       </Container>
     </>
