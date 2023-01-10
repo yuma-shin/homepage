@@ -56,8 +56,10 @@ export default function Navbar() {
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}
             pr={10}
-            as="h1"
-            size="md">
+            as="a"
+            size="md"
+            href='/'
+            >
             Yuma Shintani
         </Heading>
 
