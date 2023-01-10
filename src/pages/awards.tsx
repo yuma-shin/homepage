@@ -1,27 +1,16 @@
 import { Box,
-    Image,
-    Flex,
-    Spacer,
     Container,
-    Center,
     Heading,
     Text,
-    Tabs,
-    Tab,
-    TabList,
-    TabPanels,
-    TabPanel,
-    Button,
-    Link,
-    Icon,
+    SimpleGrid
    } from '@chakra-ui/react'
 
 function awards() {
     return (
         <>
             <Container maxW='800px' pt={10} marginBottom="16">
-                <Flex>
-                    <Box mr={5}>
+                <SimpleGrid columns={[1,1,2]} spacing={10}>
+                    <Box>
                         <Heading size={'md'}>2014年12月</Heading>
                         <Text>第3回高校・高専「気象観測機器コンテスト」優秀賞</Text>
                         <Text><b>受賞作品</b> : 2014 Examine Project | Cloud Examine</Text>
@@ -42,7 +31,7 @@ function awards() {
                         <Text>NAPROCK 10th International Programming Contest In The Original Section SECOND PRISE</Text>
                         <Text><b>受賞作品</b> : ぷらねっと -ARを用いた植物栽培教育支援システム-</Text>
                     </Box>
-                    <Box ml={5}>
+                    <Box>
                         <Heading size={'md'}>2018年11月</Heading>
                         <Text>第7回高校・高専「気象観測機器コンテスト」最優秀賞</Text>
                         <Text><b>受賞作品</b> : 多地点同時・多種気象データ観測機器「P=System」</Text>
@@ -61,7 +50,8 @@ function awards() {
                         <Text>DX Summit 2022 Award</Text>
                         <Text>Servo+IoTでバーチャル検証空間を拡大 -リアルから繋ぐ鍵Remote Key Puncher-</Text>
                     </Box>
-                </Flex>
+
+                </SimpleGrid>
             </Container>
         </>
     )
