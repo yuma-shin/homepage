@@ -49,6 +49,9 @@ function awards() {
                         <Heading size={'md'} pt={10}>2022年12月</Heading>
                         <Text>DX Summit 2022 Award</Text>
                         <Text>Servo+IoTでバーチャル検証空間を拡大 -リアルから繋ぐ鍵Remote Key Puncher-</Text>
+                        <Heading size={'md'} pt={10}>2023年06月</Heading>
+                        <Text>社長表彰 佳作</Text>
+                        <Text>SkyWay+IoTでバーチャル検証空間を実現 -リアルな検証を自宅でも可能に-</Text>
                     </Box>
 
                 </SimpleGrid>
