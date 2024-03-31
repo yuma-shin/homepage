@@ -14,7 +14,9 @@ import { Box,
          Link,
          Icon,
          HStack,
-         Stack
+         Stack,
+         UnorderedList,
+         ListItem
         } from '@chakra-ui/react'
 import { AiFillGithub,AiFillInstagram,AiOutlineTwitter,AiFillYoutube,AiFillHeart } from 'react-icons/ai'
 import { SiQiita } from 'react-icons/si'
@@ -36,7 +38,7 @@ function Home(){
             <Box>
               <Heading>Yuma Shintani</Heading>
               <Text>Engineer</Text>
-              <Text>Voice Communication, Network, Cloud</Text>
+              <Text>Voice Communication, Network, Cloud, Azure Open AI</Text>
             </Box>
           </Center>
         </HStack>
@@ -97,10 +99,22 @@ function Home(){
                   <li>Smart Data Platform</li>
                   <li>VMware vSphere</li>
                   <li>Zabbix</li>
+                  <li>Azure Open AI</li>
                 </ul>
               </TabPanel>
             </TabPanels>
           </Tabs>
+        </Box>
+        <Box pt={10}>
+          <Heading size='md' mb={1}>Certification</Heading>
+          <UnorderedList>
+            <ListItem>
+              CompTIA Cloud Essentials
+            </ListItem>
+            <ListItem>
+              JDLA Deep Learning for GENERAL 2024#2
+            </ListItem>
+          </UnorderedList>
         </Box>
         <Box pt={10}>
           <Heading size='md' mb={1}><Icon as={AiFillHeart} pt={1}/>Music</Heading>

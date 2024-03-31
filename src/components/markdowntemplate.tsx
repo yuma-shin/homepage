@@ -53,8 +53,7 @@ const a = {
         textDecoration: "none",
         color: "#3182CE",
         _hover: {
-            textDecoration: "none",
-            color: "#4593e6",
+            textDecoration: "underline",
         },
     },
 };
